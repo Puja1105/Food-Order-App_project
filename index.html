@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <span id="name">🍔Foodies</span>
+            <ul class="links-container">
+                <li class="link-items"><button class="btn" id="menu">Menu</button>
+                <li class="link-items"><button class="btn" id="order">Order</button>
+                <li class="link-items"><button class="btn" id="Restaurants">Restaurants</button>
+                <li class="link-items"><button class="btn" id="Account">Account</button>
+            </ul>
+            <div class="nav-extras">
+                <div class="search">
+                    <input type="text" class="search-box" placeholder="Search Restaurants, Cusins">
+                    <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+
+            </div>
+        </nav>
+        <main id="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-heading">Eat the best</h1>
+                <p class="hero-lines">Explore and understand the culture more by tasting the amazing dishes of that
+                    culture.</p>
+
+                <div class="search-location">
+                    <input type="text" class="search-box" placeholder="Search Restaurants, Cusins">
+                    <button class="search-btn locate-btn"><i class="fa-solid fa-location-crosshairs"></i></button>
+                </div>
+                <div class="hero-container">
+                    <button class="btn">Order food</button>
+                    <p class="or">or</p>
+                    <button class="btn transparent">Make reservation</button>
+                </div>
+
+
+            </div>
+            <div class="hero-img">
+                <div class="background-ele">
+                    <div class="ellipse"></div>
+                    <div class="ellipse"></div>
+                    <div class="ellipse"></div>
+                </div>
+                <div class="food-img">
+                    <img src="https://blog.swiggy.com/wp-content/uploads/2024/02/Masala-Dosa-1024x538.jpg"
+                        class="food-items" alt="dosa.img">
+                    <img src="https://hungrybynature.com/wp-content/uploads/2017/09/pinch-of-yum-workshop-19.jpg"
+                        class="food-items" alt="pancake.img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/1200px-Pizza-3007395.jpg"
+                        class="food-items" alt="pizza.img">
+                </div>
+            </div>
+
+
+        </main>
+    </header>
+    <section id="restaurants-list">
+        <div class="top">
+            <h2 class="top-heading">Top brands for you</h2>
+            <div class="brands">
+            <button id="dominos"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Domino%27s_pizza_logo.svg/800px-Domino%27s_pizza_logo.svg.png" class="top-brand" alt=""></button>
+            <button id="MCd"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/McDonald%27s_square_2020.svg/960px-McDonald%27s_square_2020.svg.png" class="top-brand" alt=""></button>
+            <button id="KFC"><img src="https://upload.wikimedia.org/wikipedia/sco/thumb/b/bf/KFC_logo.svg/450px-KFC_logo.svg.png?20170615210441" class="top-brand" alt=""></button>
+            <button id="pizzaHut"><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Pizza_hut_logo_international.svg" class="top-brand" alt=""></a>
+            <button id="meghna"><img src="https://pbs.twimg.com/profile_images/664417544791461888/Pmw_svcp_400x400.png" class="top-brand" alt=""></a>
+            <button id="burger"><img src="https://static.vecteezy.com/system/resources/previews/020/190/410/non_2x/burger-king-logo-burger-king-icon-free-free-vector.jpg" class="top-brand" alt=""></button>
+            <button id="wow"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAojyz0dROJqJeBoABSSuqjANct1bzCF1i_g&s" class="top-brand" alt=""></button>
+            <button id="baskin"><img src="https://1000logos.net/wp-content/uploads/2016/10/Baskin-Robbins-Logo-2020.png" class="top-brand" alt=""></button>
+</div>
+        </div>
+        
+    
+    
+    </section>
+
+<div class="menu-popup" id="menuPopup">
+  <div class="menu-content">
+    <span class="close-btn" onclick="closeMenuPopup()">&times;</span>
+    <h2>🍴 Available Menu</h2>
+    <ul id="menuList"></ul> 
+  </div>
+</div>
+
+<div class="restaurant-popup" id="restaurantPopup">
+    <div class="resta-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2> 🛎️ Top Restaurants🍴</h2>
+        <ul id="restaList"></ul>
+    </div>
+</div>
+<div class="popup" id="brandPopup">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closeBrandPopup()">&times;</span>
+    <h2 id="brandTitle"></h2>
+    <ul id="brandMenuList"></ul>
+  </div>
+</div>
+
+
+    <script src="script.js"></script>
+
+    
+    
+</body>
+
+</html>
