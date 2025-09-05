@@ -1,0 +1,464 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-radius: border-box;
+}
+body{
+   
+    background: beige;
+    font-family: cursive;
+}
+
+#name{
+    padding: 10px;
+    background: rgb(255, 106, 52);
+    text-align: center;
+    margin-left: 2rem;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 2.0px 0.6px;
+    font-family: cursive;
+
+
+
+}
+
+
+.navbar{
+    display: flex;
+    text-align: center;
+    position: fixed;
+    background: linear-gradient(to left, #f85f00, #fb7a02);
+    padding: 1rem;
+    width: 100%;
+    height: 3rem;
+    z-index: 5;
+
+}
+
+.links-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: 15rem;
+    gap: 3rem;
+}
+.link-items{
+    display: inline-block; 
+  color: rgb(255, 253, 253);
+  text-decoration: none;
+    /* background: white; */
+  padding: 2px 3px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+
+}
+.link-items:hover {
+  background: #ed4705;
+  transform: scale3d(1.1, 1.1, 1);
+}
+.nav-extras{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 1rem;
+    
+}
+
+.search{
+    position: relative;
+    width: 30vw;
+    min-width: 150px;
+    height: 2.5rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    
+    
+}
+.search-box{
+   padding: 10px;
+   border: none;
+
+}
+
+.search-btn{
+   padding: 10px;
+   border: none;
+    
+}
+
+
+
+#hero-section{
+    height: 100vh;
+    padding: 0 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    background-color: #fce0c5;
+}
+
+.hero-content{
+    width: 40%;
+}
+.hero-heading {
+  display: block;       /* always visible */
+  font-size: 4rem;      /* default desktop */
+  color: rgb(254, 99, 3);
+  z-index: 10;          /* above background shapes */
+}
+.hero-lines{
+    line-height: 2rem;
+    opacity: 0.75;
+    color: #e95f08;
+    margin-top: 4rem;
+}
+
+.search-location .search-box{
+    padding: 1 rem 1.5rem;
+}
+.hero-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    
+}
+.btn{
+    padding: 1rem 2rem;
+    text-align: center;
+    background: #fb7a02;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.4rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    transform: scale3d(1.1, 1.1, 1);
+}
+.btn.transparent{
+    background: transparent;
+    border: 0.1rem solid rgb(242, 123, 12);
+    color: rgb(242, 123, 12) ;
+}
+.hero-img{
+    min-width: 30rem;
+    min-height: 30rem;
+    position: relative;
+}
+.food-img,
+.background-ele {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.ellipse{
+    position: absolute;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    border-radius: 100%;
+    border: 0.01rem solid rgb(242, 123, 12);
+    transform-origin: center;
+
+}
+.ellipse:nth-child(1){
+    width: 80%;
+    transform: translate(-50%, -50%) rotate(20deg);
+}
+.ellipse:nth-child(2){
+    width: 90%;
+    transform: translate(-50%, -50%) rotate(40deg);
+}
+.ellipse:nth-child(3){
+    width: 80%;
+    transform: translate(-50%, -50%) rotate(60deg);
+}
+
+
+.food-items{
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    border: none;
+    border-radius: 50% ;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+     object-fit: cover;
+     margin-top: 2rem;
+       
+}
+.food-items:nth-child(1){
+    width: 13rem;
+    height: 13rem;
+    left: 10%;
+    top: -10%;
+}
+.food-items:nth-child(2){
+    width: 11.5rem;
+    height: 11.5rem;
+    right: -10%;
+    bottom: 30%;
+}
+
+.food-items:nth-child(3){
+    width: 12rem;
+    height: 12rem;
+    left: -3%;
+    bottom: 10%;
+}
+
+
+#restaurants-list {
+  padding: 2rem 1vw;
+  background: #f34b04;
+}
+.top {
+  /* text-align: center; */
+  padding: 1rem 2vw;
+}
+.top-heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: left; 
+  color: #ffffff;
+}
+
+.brands {
+   display: grid;
+  grid-template-columns: repeat(4, 1fr); /* ✅ 4 per row on desktop */
+  gap: 1.5rem; 
+  justify-items: center;
+  align-items: center;
+  padding: 1rem;
+}
+.brands button{
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.brands button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.top-brand {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  background: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  
+}
+
+.top-brand:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+.menu-popup, .restaurant-popup {
+  display: none; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6); /* dark overlay */
+  backdrop-filter: blur(4px);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* 🔹 Popup Box */
+.menu-content, .resta-content{
+  background: #fff;
+  padding: 2rem;
+  width: 300px;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+  animation: slideUp 0.3s ease-in-out;
+}
+
+/* 🔹 Popup Title */
+.menu-content, .resta-content h2 {
+  color: #f85f00;
+  margin-bottom: 1rem;
+}
+
+/* 🔹 List inside popup */
+.menu-content, .resta-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-content, .resta-content li {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+/* 🔹 Close Button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  color: #f85f00;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.close-btn:hover {
+  transform: scale(1.2);
+  color: #ff4500;
+}
+
+/* 🔹 Fade-in Animation for Overlay */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* 🔹 Slide-up Animation for Box */
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 2rem;
+  width: 300px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.popup-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.popup-content li {
+  padding: 0.6rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #f85f00;
+}
+
+
+
+
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+    
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    flex-wrap: wrap; /* allow wrapping on smaller screens */
+    height: auto;
+    padding: 1rem;
+  }
+
+  .links-container {
+    gap: 1rem;  /* tighter spacing */
+    margin-left: 0;
+  }
+  .nav-extras {
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  #hero-section {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem;
+    text-align: center;
+  }
+   .hero-content {
+    width: 80%;
+  }
+  .hero-heading {
+    font-size: 2rem;
+    line-height: 20rem;
+    text-align: center;
+    margin-top: 15rem;
+  }
+  .hero-lines {
+    margin-top: 2rem;
+  }
+
+  .hero-container {
+    justify-content: center;
+  }
+
+  .hero-img {
+    min-width: 22rem;
+    min-height: 22rem;
+    margin-top: 2rem;
+  }
+  .food-items {
+    width: 9rem;
+    height: 9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Navbar becomes stacked */
+  .navbar {
+    flex-direction: column;   /* stack vertically */
+    align-items: flex-start;  /* align items to the left */
+    height: auto;             /* auto height for stacked items */
+    padding: 1rem;
+  }
+
+  .links-container {
+    flex-direction: column;   /* stack links */
+    gap: 0.5rem;
+    margin-left: 0;
+  }
+
+  .nav-extras {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 0.5rem;
+  }
+}
